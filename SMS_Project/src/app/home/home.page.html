@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Project1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Project1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" width="60%" margin="auto">
+    <strong>Welcome To</strong>
+    <br>
+    <strong>Business Mesaaging Service</strong>
+    <ion-grid  class="auth-form">
+      <ion-row>
+        <ion-col align-self-center>
+          <ion-button [routerLink]="['/login']"  class="w-25" color="primary">Sign In</ion-button>
+          <br>
+          <span class="divider">or</span>
+           <br>
+          <span class="already">New user?</span>
+           <br>
+          <ion-button [routerLink]="['/register']"  class="w-25"   color="danger">Register</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </div>
+
+</ion-content>
